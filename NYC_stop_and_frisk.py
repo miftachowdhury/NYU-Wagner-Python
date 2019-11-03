@@ -13,8 +13,8 @@ from pathlib import Path
 sf_data = Path("C:/Users/Mifta/Documents/NYU Wagner/Python/StatisticsHW/stopfrisk/NYPD Stop Frisk Data 2003_2017")
 
 #check encoding for all files in sf_data, to address encoding concerns in assignment instructions
-#COMMENTED CODE# for currentfile in sf_data.iterdir(): 
-    #COMMENTED CODE# with open(currentfile) as data: print(data)
+    #COMMENTED CODE# for currentfile in sf_data.iterdir(): 
+    #COMMENTED CODE#    with open(currentfile) as data: print(data)
 #encoding for all files in sf_data is 'cp1252'
 
 #csv files 2003-2016: create a dataframe by using a for loop to read in columns of interest from csv files
