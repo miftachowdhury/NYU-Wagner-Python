@@ -1,61 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Statistics I & II
-
-# ### Part 1. _Analyzing Stop and Frisk Data_
-# 
-# An analysis by the NYCLU revealed that innocent New Yorkers have been subjected to police stops and street interrogations more than 5 million times since 2002, and that black and Latino communities continue to be the overwhelming target of these tactics. Nearly nine out of 10 stopped-and-frisked New Yorkers have been completely innocent. <br>
-# 
-# The defenders of Stop & Frisk have said that the stops have been random and as such they've been able to reduce the crime rates in the city. However, you feel that you the arrests have been leveled in an unfair manner and more so against black people in the city. <br>
-# 
-# As such you set out to investigate this and look at the stop and frisk data from 2003 - 2017. The data is provided as excel files in the NYPD website below:
-# 
-# <img src = 'stop_frisk.png'>
-# 
-# You realize that some of the files are not like the others but you have enough information from the files to make your analysis work. You are certainely interested in establishing whether,  for the arrests that didn't lead to an arrest (where no offense was found), was the choice to stop the subject random or not. In this analysis, you will  have to consider the population of NYC as found in the census website below.
-# 
-# <img src = 'population.png'>
-# 
-# ### Your task
-# 
-# Your task is to come up with the statistic and the model needed to find out whether the stop and frisk program could actually be biased in its treatment of NYC's black population. Could it be biased? Or it is as random as the NYPD claims?
-# 
-# ### Please note
-# 
-# Please take the time to study the files. The codebook to the files is provided. 
-# <br>
-# Making the time upfront to understand the data and the task you are supposed to do is useful. It iwll make the task of putting together the files to come up with the conviction rates plus coming up with the statistic and the simulations very straightforward. <br>
-# The goal of the question is to get you using all the skills you have learned in class to do the kind of work you'd be doing outside of a class environment.
-Some notes:
-
-Prior to 2017, the following keys stand for race:
-
-A Asian Pacific
-B Black
-I American Indian
-P Black Hispanic
-Q White Hispanic
-W White
-X Unknown
-Z Other
-
-Also note, prior to 2017, there isn't an explicit arrest column. But please observe that anything found on anyone led to arrests.
-
-Some useful resources:
-- Sometime, when you read CSV files, their encoding will be off. In order to mitigate this, please see this posting on how to encode errors in Pandas read_csv: https://stackoverflow.com/questions/30462807/encoding-error-in-panda-read-csv
-
-- Similarly, some files will have mixed types wehn you opn them. When opening CSV files that have mixed types, using dtype='unicode' in your read_csv(...) function should kill the errors / warnings
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
-
-
-# In[2]:
 
 
 #stop and frisk data downloaded from 'https://www1.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page'
