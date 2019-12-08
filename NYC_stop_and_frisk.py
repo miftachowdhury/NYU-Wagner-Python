@@ -125,7 +125,7 @@ plt.scatter(inn_stop_black, 0, color='red', s=30);
 
 print('Based on the plot, our test statistic clearly does not fall in the distribution, suggesting that the stops are not random.')
 
-k than would be expected based on the demographics of NYC?
+#QUESTION 1: Of stops that did not result in an arrest, is the person significantly more likely to be black than would be expected based on the demographics of NYC?
 
 #The statistic: Proportion of the population of innocent stops who are black: a sample proportion of 0.5797 (57.97%)
 
